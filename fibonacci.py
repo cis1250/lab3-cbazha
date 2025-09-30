@@ -8,12 +8,12 @@
 
 fib = input("How many terms of the fibonacci sequence do you want?")
 
-while (int(fib)<=0):
+if (int(fib)<=0):
   input("Please enter a positive integer.")
-x = 0
-y = 1
+  x = 0
+  y = 1
 
-for num in fib:
-  x = fib
-  y = fib + x
-  print(x, y)
+  for x in range(int(fib)):
+    x = y
+    y = x + y
+    print(x)

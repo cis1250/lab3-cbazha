@@ -40,7 +40,7 @@ sent = split(user_sentence)
 words = []
 frequencies = []
 
-for word in words:
+for word in sent:
     word = word.lower()
     if word in frequencies:
         index = words.index(word)

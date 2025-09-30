@@ -42,15 +42,15 @@ frequencies = []
 
 for word in sent:
     word = word.lower()
-    if word in frequencies:
+    if word in words:
         index = words.index(word)
-        frequencies[index] =+ 1
+        frequencies[index] += 1
     else:
         words.append(word)
         frequencies.append(1)
 
 for i in range(len(words)):
-    print({words{i}})
+    print(words[i], frequencies[i])
 
 
 

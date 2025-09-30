@@ -35,7 +35,7 @@ while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
 
-sent = split(user_sentence)
+sent = user_sentence[:-1].split()
 
 words = []
 frequencies = []

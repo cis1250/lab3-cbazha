@@ -48,7 +48,10 @@ for word in sent:
     else:
         words.append(word)
         frequencies.append(1)
-    
+
+for i in range(len(words)):
+    print({words{i}})
+
 
 
 

@@ -6,9 +6,16 @@
 # Validate that the input is a positive integer.
 # Use a for loop to print the Fibonacci sequence up to that many terms.
 
-input = Input("How many terms of the fibonacci sequence do you want?")
+fib = Input("How many terms of the fibonacci sequence do you want?")
+
 while (input<=0):
   Input("Please enter a positive integer.")
 
-for num in input:
-  
+x = 0
+y = 1
+
+for num in fib:
+  x = y
+  y = x + y
+
+print(x, y)
